@@ -1,0 +1,120 @@
+:root {
+  --azul: #2c3e50;
+  --laranja: #e67e22;
+  --cinza: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--cinza);
+}
+
+/* cabeçalho */
+header {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* conteúdo */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--azul);
+  border-bottom: 2px solid var(--laranja);
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* grade dos livros */
+.livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.livro {
+  background-color: var(--cinza);
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* botão */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: var(--laranja);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* rodapé */
+footer {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: var(--laranja);
+}
+
+/* celular */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
